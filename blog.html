@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Simples</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #000000;
+    }
+
+    header {
+      background-color: #812f2f;
+      color: #fff;
+      padding: 1rem;
+    }
+
+    header h1 {
+      margin-bottom: 0.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      list-style: none;
+      text-decoration: underline;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 1rem;
+      gap: 2rem;
+    }
+
+    article {
+      flex: 2 1 60%;
+      background: #fff;
+      padding: 1rem;
+      
+    }
+
+    article img {
+      max-width: 100%;
+      height: auto;
+      margin: 1rem 0;
+    }
+
+    .data {
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    aside {
+      flex: 1 1 30%;
+      background: #fff;
+      padding: 1rem;
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #812f2f;
+      color: #fff;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        flex-direction: column;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tudo sobre Romance</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+        <h2>A influência da mídia na construção do amor romântico</h2>
+        <p class="data">Publicado em outubro de 2008</p>
+        <img src="https://i.pinimg.com/736x/07/50/6e/07506eae9bb2159f3a7615b8fb9c8f89.jpg" alt="Imagem do filme The Notebook"/>
+        <p>A mídia está presente diariamente para cada indivíduo. Ela é um dos fatores
+            ideológicos dentro da sociedade que moldam culturas, o cotidiano das pessoas, o
+            comportamento e tudo mais que ela entrar em contato. Ela dita regras, diz como o
+            indivíduo deve ser, pensar e agir. São as grandes indústrias e instituições que estão por
+            trás do domínio das mensagens e produtos produzidos e distribuídos pela mídia. O
+            amor, sentimento importante e presente na vida das pessoas, também é influenciado
+            por ela. O cinema, forma eficiente que a mídia encontra para transmitir as ideologias, já
+            está inserido na cultura das sociedades, assim como as sociedades fazem parte da
+            cultura do cinema. O filme romântico é utilizado pela mídia para conduzir as
+            características do sentimento e ensinar ao indivíduo como se deve amar no meio em
+            que vive. Nenhuma sociedade vive mais sem a presença midiática, é algo que criou
+            raízes e uma cultura própria. Gera lucro para alguns e ilusões para outros. Assim,
+            realidade e ficção se misturam num mundo onde tudo não passa de um verdadeiro
+            espetáculo. </p>
+    </article>
+    <aside>
+        <section>
+            <h3>Ver outros posts</h3>
+            <ul>
+                <li><a href="#">Como baixar filmes de Romance</a></li>
+                <li><a href="#">Dicas de melhores filmes de comédias românticas dos anos 2000</a></li>
+                <li><a href="#">Qual é o melhor filme de romance de 2025?</a></li> 
+            </ul>
+        </section>
+    </aside>
+</main>
+<footer>
+    <p>&copy; 2025 Tudo sobre Romance. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>
